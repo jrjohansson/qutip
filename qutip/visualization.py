@@ -1060,7 +1060,6 @@ def plot_spin_distribution_3d(P, THETA, PHI,
 #
 # Qubism and other qubistic visualizations
 #
-
 def complex_array_to_rgb(X, theme='light', rmax=None):
     """
     Makes an array of complex number and converts it to an array of [r, g, b],
@@ -1259,21 +1258,19 @@ def plot_qubism(ket, theme='light', how='pairs',
 
     how : 'pairs' (default), 'pairs_skewed' or 'before_after'
         Type of Qubism plotting.
-        Options:
-            'pairs' - typical coordinates,
-            'pairs_skewed' - for ferromagnetic/antriferromagnetic plots,
-            'before_after' - related to Schmidt plot (see also: plot_schmidt).
+        Options: 'pairs' - typical coordinates, 'pairs_skewed' - for
+        ferromagnetic/antriferromagnetic plots, 'before_after' - related to
+        Schmidt plot (see also: plot_schmidt).
 
     grid_iteration : int (default 1)
         Helper lines to be drawn on plot.
         Show tiles for 2*grid_iteration particles vs all others.
 
     legend_iteration : int (default 0) or 'grid_iteration' or 'all'
-        Show labels for first 2*legend_iteration particles.
-        Option 'grid_iteration' sets the same number of particles
-            as for grid_iteration.
-        Option 'all' makes label for all particles.
-        Typically it should be 0, 1, 2 or perhaps 3.
+        Show labels for first 2*legend_iteration particles. Option
+        'grid_iteration' sets the same number of particles as for
+        grid_iteration. Option 'all' makes label for all particles. Typically
+        it should be 0, 1, 2 or perhaps 3.
 
     fig : a matplotlib figure instance
         The figure canvas on which the plot will be drawn.
